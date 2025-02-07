@@ -1,0 +1,39 @@
+header {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.header-left {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin: 0px 12px 0px 12px;
+    padding: 0px 12px 0px 12px;
+}
+
+.header-left .logo__contry {
+}
+
+.header-center {
+    display: flex;
+}
+
+.header-right {
+display: flex;
+gap: 24px;
+margin: 0px 12px 0px 12px;
+padding: 0px 12px 0px 12px;
+
+}
+
+main {
+
+}

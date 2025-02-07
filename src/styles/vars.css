@@ -1,0 +1,8 @@
+:root {
+    /* FONTS */
+    --font-dm-sans: 'DM Sans', sans-serif;
+
+    /* COLORS */
+    --bg-color: white;
+    box-sizing: border-box;
+}
