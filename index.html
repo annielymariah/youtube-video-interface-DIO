@@ -16,7 +16,7 @@
     <header>
         <div class="header-left">
             <div class="menu">
-                <img src="./src/assets/icons/menu.png">
+                <img src="./src/assets/icons/menu.png" alt="Menu">
             </div>
             <span class="logo">
                 <img src="./src/assets/icons/youtube_logo.png">
@@ -25,46 +25,90 @@
         </div>
 
         <div class="header-center">
-            <div class="search">
-                <form action="/search" method="get">
-                    <input type="search">
-                        <button type="submit"><img src="./src/assets/icons/search.png"></button>
-                </form>
-            </div>
+            <form class="search-form" action="/search" method="get">
+                <input type="search" class="search-input" placeholder="Pesquisar">
+                <button type="submit" class="search-button">
+                    <img src="./src/assets/icons/search.png" alt="Pesquisar">
+                </button>
+            </form>
         </div>
 
         <div class="header-right">
-            <div class="upload-video">
-                <span class="upload-video__button">
-                    <button>
-                        <img src="./src/assets/icons/video.png">
+            <div class="button-container">
+                <div class="upload-video">
+                    <button class="upload-video__button">
+                        <img src="./src/assets/icons/video.png" alt="Upload">
                     </button>
-                </span>
-            </div>
-            <div class="notification">
-                <span class="notification__button">
-                    <button>
-                        <img src="./src/assets/icons/bell.png">
+                </div>
+                <div class="notification">
+                    <button class="notification__button">
+                        <img src="./src/assets/icons/bell.png" alt="Notificações">
                     </button>
-                </span>
-            </div>
-            <div class="profile">
-                <span class="profile__button">
-                    <button>
-                        <span class="profile__button__picture"><img src="./src/assets/icons/profile_picture.png"></span>
+                </div>
+                <div class="profile">
+                    <button class="profile__button">
+                        <span class="profile__button__picture"><img src="./src/assets/img/profile-picture.jpg"
+                                alt="Perfil"></span>
                     </button>
-                </span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
+        <div class="video">
+            <iframe class="video__content" src="https://www.youtube.com/embed/xFnc00wpAPg?si=QKpoyLG-oPiAI2mN"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
 
+            <h1 class="video__title">
+                EP de Burnice: Burning Desires "Bar do Desespero" | Zenless Zone Zero
+            </h1>
+
+            <div class="channel">
+                <div class="channel__profile">
+                    <img class="channel__profile-img" src="./src/assets/img/zzz-profile-icon.png"
+                        alt="Zenless Zone Zero">
+
+                    <div class="channel__profile-info">
+                        <h2 class="channel__profile__name">Zenless Zone Zero</h2>
+                        <p class="channel__profile__follows" id="follows-count">1.15 mi de inscritos</p>
+                    </div>
+
+                    <button class="channel__subscribe-button">
+                        Inscrever-se
+                    </button>
+                </div>
+
+                <div class="video__interactions">
+                    <div class="video__likes">
+                        <button class="like-button">
+                            <img src="src/assets/icons/thumbs-up.png" alt="Curtir"> <span id="likes-count">0</span>
+                        </button>
+
+                        <button class="dislike-button">
+                            <img src="src/assets/icons/thumbs_down.png" alt="Não curtir">
+                        </button>
+                    </div>
+
+                    <button class="video__share-button">
+                        <img src="src/assets/icons/share.png" alt="Compartilhar"> Compartilhar
+                    </button>
+                </div>
+            </div>
+
+            <div class="video__description">
+                <p class="publishment-date" id="publishment-date">17 out. de 2024</p>
+                <p>Descrição do vídeo...</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <p>Test</p>
+        </div>
     </main>
 
-    <sidebar>
-
-    </sidebar>
 </body>
 
 </html>

@@ -4,5 +4,12 @@
 
     /* COLORS */
     --bg-color: white;
-    box-sizing: border-box;
+    --bg-second-color: #969696;
+    --subscribe-color: #000000;
+    --subscribe-hover: #434343;
+    --button-hover: #ccc;
+
+    /* WIDTHS */
+    --video-width: 866px;
+    --video-height: 487px;
 }
