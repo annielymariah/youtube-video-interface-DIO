@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
-    z-index: 1000; 
+    z-index: 1000;
 
 }
 
@@ -41,7 +41,7 @@ header {
 
 .header-center .search-form {
     display: flex;
-    align-items: stretch; 
+    align-items: stretch;
     width: 400px;
     padding: 5px 10px;
 }
@@ -51,7 +51,7 @@ header {
     padding: 8px 12px;
     border: 1px solid var(--bg-second-color);
     border-radius: 20px 0 0 20px;
-    font-size: 16px;
+    font-size: 1rem;
     outline: none;
 }
 
@@ -79,13 +79,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px; 
-    box-sizing: border-box; 
+    height: 40px;
+    box-sizing: border-box;
 }
 
 .search-button img {
-    width: 20px; 
-    height: 20px; 
+    width: 20px;
+    height: 20px;
 }
 
 .header-right {
@@ -97,12 +97,13 @@ header {
 
 
 .button-container {
-    display: flex; 
-    gap: 16px; 
-    align-items: center; 
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
-.upload-video__button, .notification__button {
+.upload-video__button,
+.notification__button {
     background-color: var(--bg-color);
     padding: 8px;
     border-radius: 50%;
@@ -122,13 +123,15 @@ header {
     object-fit: cover;
 }
 
-.upload-video__button:hover, .notification__button:hover {
+.upload-video__button:hover,
+.notification__button:hover {
     background-color: var(--button-hover);
     padding: 8px;
     border-radius: 50%;
 }
 
-.upload-video__button img, .notification__button img {
+.upload-video__button img,
+.notification__button img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,15 +141,16 @@ header {
 
 
 main {
-    position: relative; 
-    height: 80%;
-    width: 100%;
+    display: flex;
+    position: relative;
     top: 46px;
-    flex: 1;
+    width: 60%;
+    padding: 0 65px;
 }
 
 .video {
-    padding: 0px 65px;
+    padding: 32px 64px 32px 64px;
+    flex: 1;
 }
 
 .video__content {
@@ -170,7 +174,7 @@ main {
 .channel__profile {
     display: flex;
     align-items: center;
-    gap: 12px; 
+    gap: 12px;
 }
 
 .channel__profile-img {
@@ -186,7 +190,7 @@ main {
 }
 
 .channel__profile__name {
-    font-size: 1.125;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -215,16 +219,15 @@ main {
 
 .video__interactions {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 16px; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .video__likes {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #333;
     border-radius: 20px;
     display: flex;
     gap: 8px;
@@ -235,11 +238,20 @@ main {
 .video__share-button {
     display: flex;
     background-color: var(--bg-color);
-    align-items: center; 
-    gap: 8px; 
-    padding: 8px 16px; 
-    border: none; 
-    border-radius: 4px; 
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.like-button {
+    border-radius: 16px 0px 0px 16px;
+    margin-right: -8px;
+    border-right: 2px solid var(--button-hover);
+}
+
+.dislike-button {
+    border-radius: 0px 16px 16px 0px;
 }
 
 .like-button:hover,
@@ -248,36 +260,34 @@ main {
     background-color: var(--button-hover);
 }
 
-.like-button {
-
-}
-
-.dislike-button {
-}
-
-.video__share-button {
-
-}
-
 .like-button img,
 .dislike-button img,
 .video__share-button img {
-    width: 20px; 
+    width: 20px;
     height: 20px;
 }
 
 .video__description {
     padding: 0px 16px;
-    border-radius: 4px; 
+    border-radius: 4px;
     margin-top: 16px;
 }
 
+.video__description__informations {
+    display: flex;
+    gap: 8px;
+}
+
 .publishment-date {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     word-wrap: break-word;
 }
 
+.hashtags {
+    color: var(--hashtags-color);
+}
+
 .video__description p {
-    font-size: 16px;
+    font-size: 1rem;
 }
